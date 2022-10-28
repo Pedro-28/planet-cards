@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.l-main {
+  background-color: azure;
+  border-radius: 10px;
+  display: flex;
+  height: 432px;
+  padding: 60px;
+  position: relative;
+  width: 768px;
+} 
+
+.c-card {
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  margin: 0 auto ;
+  padding: 60px;
+  top: 0;
+  transition: all 0.5s ease-in;
+  width: 100%;
+}
+
+.c-card:not(.is-active) {
+  transition-delay: 1s;
+}
+
+.c-card-img {
+  width: 250px;
+  height: 250px;
+}
+
+.c-card-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  justify-content: space-evenly;
+  width: 518px;
+}
+
+.c-card-title {
+  font-size: 3em;
+  font-family: 'Rubik Moonrocks', cursive;  
+}
+
+.c-card-explanation {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.c-card-sun {
+  background-color: rgb(250, 175, 36);
+  clip-path: circle(0% at 280px 410px);
+  color: white;
+}
+
+.c-card-mercury {
+  background-color: rgb(103, 65, 207);
+  clip-path: circle(0% at 330px 410px);
+  color: white;
+}
+
+.c-card-venus {
+  background-color: rgb(255, 112, 56);
+  clip-path: circle(0% at 390px 410px);
+  color: white;  
+}
+
+.c-card-earth {
+  background-color: rgb(0, 128, 75);
+  clip-path: circle(0% at 445px 410px);
+  color: white;
+}
+
+.c-card-mars {
+  background-color: rgb(255, 60, 0);
+  clip-path: circle(0% at 490px 410px);
+  color: white;  
+}
+
+.c-card-jupiter {
+  background-color: rgb(194, 148, 88);
+  clip-path: circle(0% at 545px 410px);
+  color: white;
+}
+
+.c-card-saturn {
+  background-color: rgb(131, 92, 41);
+  clip-path: circle(0% at 603px 410px);
+  color: white;
+}
+
+.c-card-uranus {
+  background-color: rgb(25, 85, 216);
+  clip-path: circle(0% at 662px 410px);
+  color: white;
+}
+
+.c-card-neptune {
+  background-color: rgb(1, 34, 107);
+  clip-path: circle(0% at 730px 410px);
+  color: white;
+}
+
+.c-menu {
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.c-menu-toggle {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 5px;
+  box-shadow: inset 3px 3px 1px rgb(46, 45, 45);
+  transition: all 0.3s ease-in;
+}
+
+.c-menu-toggle:active {
+  transform: translateY(2px);
+}
+
+.c-menu-toggle:hover {
+  background-color: white;
+  color: black
+}
+
+.is-active {
+  clip-path: circle(100%);
+  transition-delay: 0s;
+  z-index: 2;
+}

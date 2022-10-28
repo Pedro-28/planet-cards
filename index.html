@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="l-main">
+    <article class="c-card c-card-sun js-card is-active">
+      <img class="c-card-img" src="./images/sun.png" alt="Sun">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Sun</h1>
+        <p class="c-card-explanation">
+          Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar
+          system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as
+          we know it could not exist here on our home planet.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-mercury js-card">
+      <img class="c-card-img" src="./images/Mercury.png" alt="Mercury">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Mercury</h1>
+        <p class="c-card-explanation">
+          Mercury is the smallest planet in our solar system. It’s just a little bigger than Earth’s moon. It is the
+          closest planet to the sun, but it’s actually not the hottest. Venus is hotter.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-venus js-card">
+      <img class="c-card-img" src="./images/Venus.png" alt="Venus">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Venus</h1>
+        <p class="c-card-explanation">
+          Venus, the second planet from the sun, is the hottest and brightest planet in the
+          solar system.
+          The scorching planet is named after the Roman goddess of love and beauty and is the only planet named after a
+          female.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-earth js-card">
+      <img class="c-card-img" src="./images/Earth.png" alt="Earth">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Earth</h1>
+        <p class="c-card-explanation">
+          Earth, our home planet, is a world unlike any other. The third planet from the sun, Earth is the only place in
+          the known universe confirmed to host life.
+          With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the only one
+          known for sure to have liquid water on its surface.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-mars js-card">
+      <img class="c-card-img" src="./images/Mars.png" alt="Mars">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Mars</h1>
+        <p class="c-card-explanation">
+          Mars, the fourth planet from the sun, is famed for its rusty red appearance. The Red Planet is a cold, desert
+          world with a very thin atmosphere. But the dusty, lifeless (as far as we know it) planet is far from dull.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-jupiter js-card">
+      <img class="c-card-img" src="./images/Jupiter.png" alt="Jupiter">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Jupiter</h1>
+        <p class="c-card-explanation">
+          Jupiter is the fifth planet from our Sun and is, by far, the largest planet in the solar system – more than
+          twice as massive as all the other planets combined.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-saturn js-card">
+      <img class="c-card-img" src="./images/Saturn.png" alt="Saturn">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Saturn</h1>
+        <p class="c-card-explanation">
+          Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.
+          Saturn is not the only planet to have rings, but none are as spectacular or as complex as Saturn's. Saturn
+          also has dozens of moons.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-uranus js-card">
+      <img class="c-card-img" src="./images/Uranus.png" alt="Uranus">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Uranus</h1>
+        <p class="c-card-explanation">
+          The seventh planet from the Sun with the third largest diameter in our solar system, Uranus is very cold and
+          windy. The ice giant is surrounded by 13 faint rings and 27 small moons as it rotates at a nearly 90-degree
+          angle from the plane of its orbit.
+        </p>
+      </div>
+    </article>
+    <article class="c-card c-card-neptune js-card">
+      <img class="c-card-img" src="./images/Neptune.png" alt="Neptune">
+      <div class="c-card-info">
+        <h1 class="c-card-title">Neptune</h1>
+        <p class="c-card-explanation">
+          Neptune is dark, cold, and very windy. It's the last of the planets in our solar system. It's more than 30
+          times as far from the sun as Earth is. Neptune is very similar to Uranus.
+        </p>
+      </div>
+    </article>
+
+    <ul class="c-menu js-menu">
+      <li class="c-menu-item" data-planet-name="sun">
+        <button type="button" class="c-menu-toggle js-button">Sun</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="mercury">
+        <button type="button" class="c-menu-toggle js-button">Mercury</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="venus">
+        <button type="button" class="c-menu-toggle js-button">Venus</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="earth">
+        <button type="button" class="c-menu-toggle js-button">Earth</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="mars">
+        <button type="button" class="c-menu-toggle js-button">Mars</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="jupiter">
+        <button type="button" class="c-menu-toggle js-button">Jupiter</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="saturn">
+        <button type="button" class="c-menu-toggle js-button">Saturn</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="uranus">
+        <button type="button" class="c-menu-toggle js-button">Uranus</button>
+      </li>
+      <li class="c-menu-item" data-planet-name="neptune">
+        <button type="button" class="c-menu-toggle js-button">Neptune</button>
+      </li>
+    </ul>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
